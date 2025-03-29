@@ -17,7 +17,7 @@ const advantages = [
 
 const Advantages = () => {
   return (
-    <section id="advantages" className="py-16 bg-[#C8C9CA] px-4">
+    <section id="advantages" className="py-16 px-4">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-8 text-[#042F83]">Наші Переваги</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -31,6 +31,13 @@ const Advantages = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="mt-8 md:mt-0 flex flex-col md:flex-row justify-start">
+        <img
+          src="./img/IMG_5802.PNG"  
+          alt="Vector 1"
+          className="w-full md:w-64 max-w-xs "
+        />
       </div>
     </section>
   );

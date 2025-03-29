@@ -2,7 +2,8 @@ import React from 'react';
 
 const MainContent = () => {
   return (
-    <section id="home" className="flex flex-col md:flex-row items-center justify-between p-8 bg-[#C8C9CA]">
+    <>
+    <section id="home" className="flex flex-col md:flex-row items-center justify-between p-8">
       <div className="max-w-xl">
         <h1 className="text-4xl font-bold mb-4 text-[#042F83]">
           Знайди себе з SkillMatch
@@ -27,6 +28,15 @@ const MainContent = () => {
         />
       </div>
     </section>
+    <div className="mt-8 md:mt-0 flex flex-col md:flex-row items-end justify-end">
+        {/* Первое изображение */}
+        <img
+          src="./img/IMG_5649.PNG"  // Укажи путь к первому векторному изображению
+          alt="Vector 1"
+          className="w-full md:w-64 max-w-xs "
+        />
+      </div>
+    </>
   );
 };
 

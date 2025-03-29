@@ -2,7 +2,7 @@ import React from 'react';
 
 const HowItWorks = () => {
   return (
-    <section id="how-it-works" className="py-16 bg-[#C8C9CA] px-4">
+    <section id="how-it-works" className="py-16 px-4">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-6 text-[#042F83]">Як це працює</h2>
         <p className="mb-4 text-[#1B478F]">
@@ -21,6 +21,12 @@ const HowItWorks = () => {
           Дізнатися більше
         </a>  
       </div>
+       {/* Второе изображение */}
+       <img
+          src="./img/IMG_5802.PNG"  // Укажи путь ко второму векторному изображению
+          alt="Vector 2"
+          className="w-full md:w-64 max-w-xs mt-4 md:mt-0 "
+        />
     </section>
   );
 };

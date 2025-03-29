@@ -13,7 +13,7 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <section id="team" className="py-16 bg-[#C8C9CA] px-4">
+    <section id="team" className="py-16 px-4">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-8 text-[#042F83]">Наша Команда</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
@@ -34,6 +34,13 @@ const Team = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="mt-8 md:mt-0 flex flex-col md:flex-row items-end justify-end">
+        <img
+          src="./img/IMG_5804.PNG" 
+          alt="Vector 1"
+          className="w-full md:w-64 max-w-xs "
+        />
       </div>
     </section>
   );
