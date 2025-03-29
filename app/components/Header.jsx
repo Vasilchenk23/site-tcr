@@ -9,22 +9,25 @@ const Header = () => {
     { name: 'Як це працює', href: '#how-it-works' },
     { name: 'Команда', href: '#team' },
     { name: 'Наші переваги', href: '#advantages' },
+    { name: 'Контакти', href: '#contacts' },
   ];
 
   return (
-    <header className="flex flex-col md:flex-row items-center justify-between p-8 bg-[#C8C9CA] text-[#042F83] relative">
-      <div className="text-4xl font-bold cursor-pointer mb-4 md:mb-0">
+    <header className="flex items-center justify-between p-4 bg-gray-800 text-white relative">
+      <div className="text-lg font-bold cursor-pointer">
         <a href="#home">SkillMatch</a>
       </div>
-      <nav className="w-full md:w-auto">
-        <ul className="flex flex-col md:flex-row items-center md:space-x-6 space-y-4 md:space-y-0">
+      <nav>
+        {/* Меню для великих екранів */}
+        <ul className="hidden md:flex space-x-6">
           {menuItems.map((item) => (
-            <li key={item.name} className="text-xl hover:text-[#557BA7] cursor-pointer">
+            <li key={item.name} className="hover:text-blue-400 cursor-pointer">
               <a href={item.href}>{item.name}</a>
             </li>
           ))}
         </ul>
-        <div className="md:hidden mt-4">
+        {/* Бургер-меню для мобільних */}
+        <div className="md:hidden">
           <button onClick={() => setMenuOpen(!isMenuOpen)}>
             <svg
               className="w-6 h-6"
@@ -40,9 +43,9 @@ const Header = () => {
             </svg>
           </button>
           {isMenuOpen && (
-            <ul className="absolute right-4 mt-2 w-48 bg-[#C8C9CA] border border-gray-700 rounded shadow-lg">
+            <ul className="absolute right-4 mt-2 w-48 bg-gray-800 border border-gray-700 rounded shadow-lg">
               {menuItems.map((item) => (
-                <li key={item.name} className="px-4 py-2 hover:bg-[#557BA7] cursor-pointer">
+                <li key={item.name} className="px-4 py-2 hover:bg-gray-700 cursor-pointer">
                   <a href={item.href} onClick={() => setMenuOpen(false)}>
                     {item.name}
                   </a>
@@ -57,4 +60,3 @@ const Header = () => {
 };
 
 export default Header;
-
