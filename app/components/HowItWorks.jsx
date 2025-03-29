@@ -1,7 +1,7 @@
 import React from 'react';
 const HowItWorks = () => {
   return (
-    <section id="how-it-works" className="py-16 px-4">
+    <section id="how-it-works" className="py-16 bg-[#ffffff] px-4">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-6 text-[#042F83]">Як це працює</h2>
         <p className="mb-4 text-[#1B478F]">

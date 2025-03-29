@@ -13,7 +13,7 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <section id="team" className="py-16 px-4">
+    <section id="team" className="py-16 bg-[#ffffff] px-4">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-8 text-[#042F83]">Наша Команда</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">

@@ -4,7 +4,7 @@ const ChatWidget = () => {
   const telegramBotLink = 'https://t.me/@Tcr23Bot'; 
 
   return (
-    <div className="fixed bottom-4 right-4">
+    <div className="fixed bottom-4 bg-[#ffffff] right-4">
       <a
         href={telegramBotLink}
         target="_blank"

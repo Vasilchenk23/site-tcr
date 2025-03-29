@@ -3,7 +3,7 @@ import React from 'react';
 const MainContent = () => {
   return (
     <>
-    <section id="home" className="flex flex-col md:flex-row items-center justify-between p-8">
+    <section id="home" className="flex flex-col md:flex-row items-center justify-between bg-[#ffffff] p-8">
       <div className="max-w-xl">
         <h1 className="text-4xl font-bold mb-4 text-[#042F83]">
           Знайди себе з SkillMatch
