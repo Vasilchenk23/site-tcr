@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ChatWidget = () => {
-  const telegramBotLink = 'https://t.me/@Tcr23Bot'; // замініть на фактичне посилання
+  const telegramBotLink = 'https://t.me/@Tcr23Bot'; 
 
   return (
     <div className="fixed bottom-4 right-4">
