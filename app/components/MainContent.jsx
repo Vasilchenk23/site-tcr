@@ -24,14 +24,13 @@ const MainContent = () => {
         <img
           src="./img/main.PNG"
           alt="SkillMatch Platform"
-          className="w-full max-w-md rounded shadow-lg cursor-pointer hover:opacity-90 transition"
+          className="w-full max-w-md"
         />
       </div>
     </section>
     <div className="mt-8 md:mt-0 flex flex-col md:flex-row items-end justify-end">
-        {/* Первое изображение */}
         <img
-          src="./img/IMG_5649.PNG"  // Укажи путь к первому векторному изображению
+          src="./img/IMG_5649.PNG" 
           alt="Vector 1"
           className="w-full md:w-64 max-w-xs "
         />
